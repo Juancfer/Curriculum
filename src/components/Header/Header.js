@@ -8,7 +8,7 @@ const Header = ({ name, description, imageUrl }) => {
       <Flex direction="row" alignItems="center" justifyContent="center" gap={6}>
         <Flex direction="column" justifyContent="center">
           <Text fontSize='3xl'>¡Hola! Me llamo</Text>
-          <Text fontSize='3xl' color="blue">{ name }</Text>
+          <Text fontSize='3xl' bgGradient='linear(to-l, #0000FF, #BFBFFF)' bgClip='text'>{ name }</Text>
           <Text fontSize='xl'>{ description }</Text>
         </Flex>
         <Image src={ imageUrl } borderRadius='10px' boxSize='200px' objectFit='cover' alt="image" />

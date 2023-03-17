@@ -17,9 +17,9 @@ const MyProjects = ({ imageUrl, title, description }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <div className="projects">
-      <Button onClick={onOpen}>
-        <Image src={ imageUrl } alt="image" />
+    <>
+      <Button p="0" boxSize="100%" onClick={onOpen}>
+        <Image boxSize="100%"  src={imageUrl} alt="image" />
       </Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>
@@ -37,7 +37,7 @@ const MyProjects = ({ imageUrl, title, description }) => {
           </ModalFooter>
         </ModalContent>
       </Modal>
-    </div>
+    </>
   )
 }
 
